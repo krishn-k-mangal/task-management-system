@@ -8,7 +8,6 @@ def create_task(body:TaskSchema, db:Session):
     new_task = TaskModel(title  = data["title"],
                         description = data["description"],
                         is_completed = data["is_completed"])
-    
     db.add(new_task)
     db.commit()
     db.refresh(new_task)
