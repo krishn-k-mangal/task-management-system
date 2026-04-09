@@ -12,4 +12,8 @@ class UserResponseSchema(BaseModel):
     email:str
     id:int
 
+class LoginScheama(BaseModel):
+    username : str
+    password : str
+
     
